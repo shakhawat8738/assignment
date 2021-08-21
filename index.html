@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Taliwind CSS CDN link -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Mac book pro</title>
+  </head>
+
+  <body>
+    <!-- start main part -->
+    <main class="w-5/6 mx-auto">
+      <!-- section is started -->
+      <section class="mt-8">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="mx-20">
+            <!-- image -->
+            <img src="images/mac.png" alt="" />
+          </div>
+
+          <div class="p-8 rounded mb-10">
+            <div class="mb-10">
+              <!-- heading -->
+              <h3 class="text-4xl mb-4 font-semibold">
+                Customize your Blue 24-inch iMac with Apple M1 chip.
+              </h3>
+              <!-- paragraph -->
+              <p class="text-lg">
+                Apple M1 chip 8-core CPU with-4 performance cores and 4
+                efficiency cores, 7-core GPU, 16-core Neural Engine 8GB unified
+                memory 256GB SSD storage Thunderbolt/USB 4 ports Magic
+                Keyboard-US English
+              </p>
+            </div>
+            <!-- button starts -->
+            <span>Memory</span>
+            <br />
+            <button onclick="memoryFubction(1);" class="button">
+              8GB unified Memory
+            </button>
+            <button onclick="memoryFubction(2);" class="button">
+              16GB unified Memory
+            </button>
+            <br />
+            <br />
+            <span>storage</span><br />
+            <button onclick="storageFubction(1);" class="button">
+              156GB ssd storage
+            </button>
+            <button onclick="storageFubction(2);" class="button">
+              512GB ssd storage
+            </button>
+            <button onclick="storageFubction(3);" class="button">
+              1TB GB ssd storage
+            </button>
+            <br />
+            <br />
+            <span>choise your delivery options</span><br />
+            <button onclick="deliveryFubction(1);" class="button">
+              free normal delivery
+            </button>
+            <button onclick="deliveryFubction(2);" class="button">
+              faster delivery charge $20
+            </button>
+            <!-- button ended -->
+            <br />
+            <br />
+          </div>
+          <!-- table start -->
+
+          <table>
+            <tr>
+              <td>Best price</td>
+              <td>$1299</td>
+            </tr>
+            <tr>
+              <td>extra memory cost</td>
+              <td>$<span id="memory_cost">0</span></td>
+            </tr>
+            <tr>
+              <td>extra storage cost</td>
+              <td>$<span id="storage_cost">0</span></td>
+            </tr>
+            <tr>
+              <td>delivery charge</td>
+              <td>$<span id="delivery_cost">0</span></td>
+            </tr>
+            <tr>
+              <td>total price</td>
+              <td>$<span id="cost">1299</span></td>
+            </tr>
+          </table>
+          <!-- table ended -->
+          <br />
+          <div>
+            <h6>enter a promo code:</h6>
+            <!-- stevekaku -->
+            <input id="input" type="text" placeholder="inter a code" />
+            <button onclick="steevtakla();" class="button2">Apply</button>
+          </div>
+        </div>
+        <!-- section is ended -->
+      </section>
+    </main>
+    <!-- ended main tag -->
+    <!-- footer -->
+    <footer>
+      <h1 class="text-center font bold text-3xl mb-6">
+        total$<span id="footer_final">1299</span>
+      </h1>
+    </footer>
+    <!-- footer ended -->
+    <!-- script tag -->
+    <script src="app.js"></script>
+  </body>
+</html>
